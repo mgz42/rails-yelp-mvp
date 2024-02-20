@@ -7,3 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Restaurant.new(name: 'Le gros chien', address: '15 Pinky Zoom', category: 'italian').save
+Restaurant.new(name: 'Beef Amazing', address: '89 Some avenue', category: 'chinese').save
+Restaurant.new(name: 'Fastina Amazica', address: '8 rue de Bloumberg', category: 'belgian').save
+Restaurant.new(name: 'La table Esservie', address: '16 place de Bancfort', category: 'french').save
+Restaurant.new(name: 'Great Mountain Goat', address: 'test address', category: 'chinese').save

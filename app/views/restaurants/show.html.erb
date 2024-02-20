@@ -1,0 +1,15 @@
+<h1><%= @restaurant.name %></h1>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.category %></p>
+
+<ul>
+<% @reviews.each do |review| %>
+<li><%= review.rating %> - <%= review.content %></li>
+<% end %>
+</ul>
+
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating, as: :integer %>
+  <%= f.submit %>
+<% end %>
